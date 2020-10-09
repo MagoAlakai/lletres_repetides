@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fase3</title>
+</head>
+<body>
+    <script>
+
+        var mi_nombre = ['J', 'O', 'S', 'E', 'F', 'A', 'R', 'F', 'A', 'N'];
+        var contador_lletres = {};
+        var contador = mi_nombre.map((letra) =>{
+            let count = 0;
+            for(let i = 0; i < mi_nombre.length; i++){
+                if(mi_nombre[i] === letra) {
+                    count++;
+                }
+            }
+            contador_lletres[letra] = count;
+        
+        });
+
+        console.log(contador_lletres);
+
+    </script>
+</body>
+</html>
